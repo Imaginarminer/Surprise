@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  background: url("https://opengameart.org/sites/default/files/aaaaaaaaaaa1_0.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.message {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .message {
+    font-size: 1rem;
+    padding: 16px 20px;
+  }
+}
